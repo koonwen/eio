@@ -1,0 +1,9 @@
+; This should be an executable, but dune won't let us associate non-installed executables
+; to packages, so we use this work-around.
+
+(executable
+ (name main)
+ (libraries eio_main yojson))
+
+(cram
+ (deps ../_build/default/bench_net/main.exe))
