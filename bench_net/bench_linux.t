@@ -1,4 +1,4 @@
-  $ EIO_BACKEND=linux ./main.exe 2 2 25 1000 30
+  $ EIO_BACKEND=linux ./main.exe 2 2 25 1000 50
   +Using linux backend
   +Running HTTP...
   {
@@ -9,13 +9,13 @@
     },
     "results": {
       "description": "requests:50000 client-domains:2 server-domains:2",
-      "iters": 30,
-      "Ave time in ms": 166.34889443715414,
-      "Ave req/s": 305541.7132416547
+      "iters": 50,
+      "Ave time in ms": 160.39939403533936,
+      "Ave req/s": 316897.5865722982
     }
   }
 
-  $ EIO_BACKEND=linux ./main.exe 1 2 25 1000 30
+  $ EIO_BACKEND=linux ./main.exe 1 2 25 1000 50
   +Using linux backend
   +Running HTTP...
   {
@@ -26,13 +26,13 @@
     },
     "results": {
       "description": "requests:25000 client-domains:1 server-domains:2",
-      "iters": 30,
-      "Ave time in ms": 127.23401387532552,
-      "Ave req/s": 197800.2734496834
+      "iters": 50,
+      "Ave time in ms": 126.21735095977783,
+      "Ave req/s": 198885.40952997442
     }
   }
 
-  $ EIO_BACKEND=linux ./main.exe 2 1 25 1000 30
+  $ EIO_BACKEND=linux ./main.exe 2 1 25 1000 50
   +Using linux backend
   +Running HTTP...
   {
@@ -43,13 +43,13 @@
     },
     "results": {
       "description": "requests:50000 client-domains:2 server-domains:1",
-      "iters": 30,
-      "Ave time in ms": 264.1992648442586,
-      "Ave req/s": 191364.84275953917
+      "iters": 50,
+      "Ave time in ms": 254.9575662612915,
+      "Ave req/s": 196356.21135301728
     }
   }
 
-  $ EIO_BACKEND=linux ./main.exe 1 1 25 1000 30
+  $ EIO_BACKEND=linux ./main.exe 1 1 25 1000 50
   +Using linux backend
   +Running HTTP...
   {
@@ -60,8 +60,8 @@
     },
     "results": {
       "description": "requests:25000 client-domains:1 server-domains:1",
-      "iters": 30,
-      "Ave time in ms": 151.43887996673584,
-      "Ave req/s": 165100.37709752942
+      "iters": 50,
+      "Ave time in ms": 156.29060745239258,
+      "Ave req/s": 159961.50844828325
     }
   }
